@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio</title>
+</head>
+
+<canvas class="webgl"></canvas>
+
+
+<body>
+    <main id="main-component" class="right">
+        <section class="container">
+            <aside id="home">
+                <h1 id="anim1" class="section-title">Clément Gambier</h1>
+                <p id="anim2">20 ans</p>
+                <p id="anim3">Étudiant</p>
+            </aside>
+        </section>
+    </main>
+
+
+    <main id="components">
+        <section class=" left">
+            <aside id="me" class="container">
+                <h2 class="section-title">A propos</h2>
+                <p>Bonjour👋,</p>
+                <p>Je m’appelle Clément Gambier, j’ai 20 ans et je suis étudiant en deuxième année de DUT Informatique à l’IUT de Montpellier-Sète.</p>
+                <p>Je vois l’informatique comme un moyen et pas une fin en soit, c’est pour cela que je cherche des projets qui ont un sens dans lequel m’investir ! </p>
+                <p>J’aimerai plus tard pouvoir des causes tel que la santé ou l’écologie.</p>
+                <p>De nombreux secteurs de l’informatique m’intéressent : le développement web, la data science, l’intelligence artificielle et la robotique.</p>
+
+                <h2>Voici mon parcours scolaire et mes différentes participations à des concours : </h2>
+                <ul>
+                    <li>Baccalauréat Scientifique Science de l’ingénieur mention européenne - Lycée Rouvière - Toulon</li>
+                    <li>DUT Informatique IUT Montpellier-Sète</li>
+                    <li>Nuit de l’informatique 2O20, 2021 (évènement national)</li>
+                    <li>CodeGame Jam 2022 (Organisé par l’IUT)</li>
+                </ul>
+
+            </aside>
+        </section>
+
+        <section class="right">
+            <aside id="competences" class="container">
+                <h2 class="section-title">Mes compétences</h2>
+                <p>HTML/CSS/PHP/Javascript</p>
+                <p>Three.js</p>
+                <p>Java</p>
+                <p>C</p>
+                <p>Python</p>
+                <p>Git</p>
+            </aside>
+        </section>
+
+
+
+
+        <section id="project-section">
+            <h2 class="section-title" style="padding-top:20px;">Mes projets</h2>
+            <article style="text-align:center;">
+            <aside id="project">
+
+                <div class="sub-project">
+                    <h3>Pile ou face</h3>
+                    <div class="tag-container">
+                        <span class="clay tag perso">Personnel</span>
+                        <span class="clay tag js">Javascript</span>
+                    </div>
+                    <a href="https://toss-coin.vercel.app">
+                        <img src="/ressources/3d-coin-dynamic-color.png" alt="pile" id="pile">
+                    </a>
+                    <div class="popup" onclick="showPopup(1);"> En savoir plus !
+                        <span class="popuptext" id="myPopup1">
+                            Mon premier projet réalisé en javascript.
+                            Avec l'utilisation de Three.js j'ai pu rajouter de la 3d dans le navigateur.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="sub-project">
+                    <h3>Interface Web SSSM-30</h3>
+                    <div class="tag-container">
+                        <span class="clay tag cours">Cours</span>
+                        <span class="clay tag php">PHP</span>
+                    </div>
+                    <img src="/ressources/fire-dynamic-color.png">
+                    <div class="popup" onclick="showPopup(2);">En savoir plus !
+                        <span class="popuptext" id="myPopup2">
+                            Dans le cadre de mon troisième semestre de DUT Informatique, j'ai participé à la conception d'une interface web afin de permettre aux pompiers de gérer leurs données.
+                           <br>En effet ce projet a été conçu en collaboration avec le service départemental des pompiers du gard.
+                            <br> J'ai également développé certaines fonctionnalité d'un application en Xamarin. <br>
+                            Malheureusement le projet n'est pas disponible car il contient des données sensibles
+
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="sub-project">
+                    <h3>Projet PHP S3</h3>
+                    <div class="tag-container">
+                        <span class="clay tag cours">Cours</span>
+                        <span class="clay tag php">PHP</span>
+                    </div>
+                    <a href="https://webinfo.iutmontp.univ-montp2.fr/~gambierc/eCommerce/index.php">
+                        <img src="/ressources/rocket-dynamic-color.png">
+                    </a>
+                    <div class="popup" onclick="showPopup(3);">En savoir plus !
+                        <span class="popuptext" id="myPopup3">
+                            Dans le cadre de mon cours de programmation web-serveur, j'ai du réaliser un site web de commerce.
+                            <br>Avec mon groupe nous avons décidé de réaliser un site de vente de NFT.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="sub-project">
+                    <h3>We discuss</h3>
+                    <div class="tag-container">
+                        <span class="clay tag perso">Personnel</span>
+                        <span class="clay tag php">PHP</span>
+                    </div>
+                    <a href="https://clement-gambier.fr/projets/wediscuss/index.php">
+                        <img src="/ressources/pencil-dynamic-color.png">
+                    </a>
+                    <div class="popup" onclick="showPopup(4);">En savoir plus !
+                        <span class="popuptext" id="myPopup4">Dans le cadre d'un concours de développement (la bourse Coddity), avec un ami j'ai développé un site web communautaire afin que chacun puisse partager des articles et en débattre.
+                        Durant ce projet j'ai du apprendre par moi même à coder en php et à utiliser Github.</span>
+                    </div>
+                </div>
+
+
+
+                <div class="sub-project">
+                    <h3>Nuit de l'info 2021</h3>
+                    <div class="tag-container">
+                        <span class="clay tag perso">Personnel</span>
+                        <span class="clay tag js">Javascript</span>
+                    </div>
+                    <a href="https://ndi2021-ours.herokuapp.com">
+                        <img src="/ressources/explorer-dynamic-colorx.png">
+                    </a>
+                    <div class="popup" onclick="showPopup(5);">En savoir plus !
+                        <span class="popuptext" id="myPopup5">
+                            Dans le cadre de ce concours, nous avions une nuit pour réaliser un site web pour les sauveteurs du Dunkerquois.
+                            Je me suis occupé de la partie front-end (Three.js), notamment de l'animation du bateau.
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="sub-project">
+                    <h3>Projet data science</h3>
+                    <div class="tag-container">
+                        <span class="clay tag perso">Personnel</span>
+                        <span class="clay tag js">Python</span>
+                    </div>
+                    <img src="/ressources/chart-dynamic-color.png">
+                    <div class="popup" onclick="showPopup(6);">En savoir plus !
+                        <span class="popuptext" id="myPopup6">A venir</span>
+                    </div>
+
+                </div>
+
+            </aside>
+            </article>
+        </section>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+
+        gsap.from('#anim1',{
+            opacity:0,
+            duration:1,
+            x:-50,
+            delay:0.5
+        })
+        gsap.from('#anim2',{
+            opacity:0,
+            duration:1.5,
+            x:-50,
+            delay:1
+        })
+        gsap.from('#anim3',{
+            opacity:0,
+            duration:1.5,
+            x:-50,
+            delay:1.5
+        })
+        function showPopup(number) {
+            const popup = document.getElementById("myPopup"+number);
+            popup.classList.toggle("show");
+        }
+        
+        
+    </script>
+
+</body>
+<footer>
+    <h2 class="section-title">Contact ↓</h2>
+    <div id="footer-container">
+        <a href="https://github.com/clement-gambier2" class="section-title">Github</a>
+        <a href="" class="section-title">Clem83Gambier@gmail.com</a>
+        <a href="https://clement-gambier.fr/ressources/CV.pdf" class="section-title" target="_blank">CV</a>
+    </div>
+    <div id="foot-end">
+        <p>Clément Gambier</p>
+        <p>Montpellier - 2022</p>
+    </div>
+
+</footer>
+</html>
+
+
+<!-- Watch out 
+Pour compiler le sass : sass --watch scss:css 
+
+-->
